@@ -44,13 +44,13 @@ function resetar() {
 }
 
 
-
-document.addEventListener('DOMContentLoaded', function() {
+// Espera o conteúdo ser carregado antes de executar o código JavaScript
+document.addEventListener('DOMContentLoaded', function() { // Obtém o botão de Dark Mode e o container das divs
   var darkModeButton = document.getElementById('darkModeButton');
   var container = document.getElementById('box');
 
-  darkModeButton.addEventListener('click', function() {
-    document.body.classList.toggle('dark-mode');
+  darkModeButton.addEventListener('click', function() { // Adiciona um evento de clique ao botão de Dark Mode
+    document.body.classList.toggle('dark-mode');  // Alterna a classe 'dark-mode' no body e no container
     container.classList.toggle('dark-mode');
     })
   }
