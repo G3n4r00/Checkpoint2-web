@@ -8,4 +8,24 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-  
+
+
+ body {
+  /* Estilos padrão */
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark-mode {
+  /* Estilos para o Dark Mode */
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+.dark-mode #container .container {
+  /* Estilos para as divs no Dark Mode */
+  background-image: none;
+  background-color: #333333;
+  color: #ffffff;
+}
+

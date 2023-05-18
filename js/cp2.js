@@ -1,17 +1,3 @@
-/* function trocarImagem() {
-    var imageDivs = document.querySelectorAll('.container'); //Seleciona as divs do html
-    var imageUrl = '/img/brinquedo.png'; 
-  
-    setInterval(function() {
-      var randomIndex = Math.floor(Math.random() * imageDivs.length);  // Gera um índice aleatório
-  
-      for (var i = 0; i < imageDivs.length; i++) { // Percorre todas as divs
-        imageDivs[i].style.backgroundImage = (i === randomIndex) ? `url(${imageUrl})` : 'none';
-      }
-    }, 4000);
-  }
-  
-trocarImagem(); */
 
 function changeImageRandomly() {
     var imageDivs = document.querySelectorAll('.container'); // Seleciona todas as divs com a classe 'myDiv'
@@ -56,3 +42,16 @@ function resetar() {
     div.textContent = originalText; // Atualiza o texto da div
   });
 }
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  var darkModeButton = document.getElementById('darkModeButton');
+  var container = document.getElementById('box');
+
+  darkModeButton.addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+    container.classList.toggle('dark-mode');
+    })
+  }
+);
